@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ekLogo from '../img/ek-logo.png';
 import { Link } from 'react-router-dom';
 import useStyles from './styles';
+import { textAlign } from '@mui/system';
     
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -116,7 +117,7 @@ const ResponsiveAppBar = () => {
                         to={page.link}
                         key={page.title}
                         onClick={handleCloseNavMenu}
-                        sx={{ my: 2, pr: 7, color: 'white', display: 'block' }}
+                        sx={{ my: 2, mr: 12, color: 'white', display: 'block'}}
                         >
                         {page.title}
                     </Button>

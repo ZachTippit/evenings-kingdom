@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import Background from '../img/fantasybg.png'
 
 export default makeStyles((theme) => ({ 
     blkBG: {
@@ -13,6 +14,13 @@ export default makeStyles((theme) => ({
         background: 'lightGray'
     },
 
+    titleBG: {
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        opacity: 0.75,
+    },
+
     home: {
         width: '100%',
         minHeight: '90vh'
@@ -24,6 +32,10 @@ export default makeStyles((theme) => ({
     centerDiv: {
         display: 'block',
         margin: 'auto'
+    },
+
+    width70: {
+        width: '70%'
     },
 
     centerText: {
@@ -78,5 +90,46 @@ export default makeStyles((theme) => ({
         bottom: '0',
         width: '100%',
         height: '10vh'
+    },
+
+    listen: {
+        width: '70%',
+        margin: 'auto'
+    },
+
+    episodeCard: {
+        display: 'block',
+        margin: 'auto',
+        width: '100%',
+        padding: '2rem'
+    },
+
+    episodeTitle: {
+        margin: 'auto',
+        paddingBottom: '1rem'
+    },
+
+    epAccordion: {
+        display: 'block',
+        margin: 'auto',
+        marginTop: '1rem'
+    },
+    
+    epAudioPlayer: {
+        height: '240',
+        border: 'none',
+        width: '100%'
+    },
+
+    divider: {
+        borderTop: '8px solid #bbb',
+        borderRadius: '5px',
+        marginTop: '20px'
+    },
+
+    fanArtLogo: {
+        display: 'block',
+        margin: 'auto',
+        height: '500px'
     }
 }))

@@ -11,12 +11,12 @@ const Home = () => {
 
     return (
         <div className={clsx(classes.home, classes.whiteBG)}>
-            <div className={clsx(classes.topPad50, classes.btmPad50, classes.liteGrayBG)}>
+            <div className={clsx(classes.topPad50, classes.btmPad50, classes.titleBG)}>
                 <Typography variant="h5" align="center">
                     On their epic quest for revenge, unlikely friends journey across an ancient, magical world...
                 </Typography>
                 <img src={EKTitle} alt="Title" className={clsx(classes.topPad50, classes.EKTitle)} />
-                <Typography variant="body1" align="center">
+                <Typography variant="body1" align="center" color="white">
                     WRITTEN AND READ BY PAULA SCHMIDT
                 </Typography>
             </div>
@@ -27,7 +27,7 @@ const Home = () => {
                 <Typography variant="body1" align="center" className={clsx(classes.btmPad50)}>
                     Audio recordings can also be found on your favorite podcast service ☺️ (Apple Music and Spotify)
                 </Typography>
-                <iframe className={clsx(classes.audioPlayer,classes.centerDiv)} title="Evening's Kingdom" allowtransparency="true" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=efa82-b3dcd8-pbblog-playlist&share=1&download=1&skin=666666&btn-skin=c73a3a&size=240" allowfullscreen=""></iframe>
+                <iframe className={clsx(classes.audioPlayer,classes.centerDiv)} title="Episode 1. (Book One)" allowtransparency="true" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=d5nfh-1044f6e-pb&from=embed&share=1&download=1&skin=666666&btn-skin=c73a3a&size=240"></iframe>
             </div>
             <div className={clsx(classes.liteGrayBG, classes.btmPad50)}>
                 <Typography variant="h4" align="center" className={clsx(classes.topPad50, classes.centerText)}>

@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer'
+import { Home, Listen, Extra, Art, Publish, Navbar, Footer} from './components'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -21,10 +19,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/listen' element={<Home/>} />
-          <Route path='/extra' element={<Home/>} />
-          <Route path='/art' element={<Home/>} />
-          <Route path='/publish' element={<Home/>} />
+          <Route path='/listen' element={<Listen/>} />
+          <Route path='/extra' element={<Extra/>} />
+          <Route path='/art' element={<Art/>} />
+          <Route path='/publish' element={<Publish/>} />
         </Routes>
         <Footer />
       </Router>
