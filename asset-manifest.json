@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/evenings-kingdom/static/css/main.a617e044.chunk.css",
+    "main.js": "/evenings-kingdom/static/js/main.89db1492.chunk.js",
+    "main.js.map": "/evenings-kingdom/static/js/main.89db1492.chunk.js.map",
+    "runtime-main.js": "/evenings-kingdom/static/js/runtime-main.f69f199e.js",
+    "runtime-main.js.map": "/evenings-kingdom/static/js/runtime-main.f69f199e.js.map",
+    "static/js/2.959acb8a.chunk.js": "/evenings-kingdom/static/js/2.959acb8a.chunk.js",
+    "static/js/2.959acb8a.chunk.js.map": "/evenings-kingdom/static/js/2.959acb8a.chunk.js.map",
+    "static/js/3.8430a977.chunk.js": "/evenings-kingdom/static/js/3.8430a977.chunk.js",
+    "static/js/3.8430a977.chunk.js.map": "/evenings-kingdom/static/js/3.8430a977.chunk.js.map",
+    "index.html": "/evenings-kingdom/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/evenings-kingdom/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.959acb8a.chunk.js.LICENSE.txt": "/evenings-kingdom/static/js/2.959acb8a.chunk.js.LICENSE.txt",
+    "static/media/ek-blk-alpha.69b86c7e.png": "/evenings-kingdom/static/media/ek-blk-alpha.69b86c7e.png",
+    "static/media/ek-bw.1b23dd43.png": "/evenings-kingdom/static/media/ek-bw.1b23dd43.png",
+    "static/media/ek-logo.22b4ed3c.png": "/evenings-kingdom/static/media/ek-logo.22b4ed3c.png",
+    "static/media/ek-rust.39a698e4.png": "/evenings-kingdom/static/media/ek-rust.39a698e4.png",
+    "static/media/fantasybg.e4c5f37e.png": "/evenings-kingdom/static/media/fantasybg.e4c5f37e.png",
+    "static/media/logo.6ce24c58.svg": "/evenings-kingdom/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f69f199e.js",
+    "static/js/2.959acb8a.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.89db1492.chunk.js"
+  ]
+}
