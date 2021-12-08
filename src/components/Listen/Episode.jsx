@@ -7,7 +7,6 @@ import clsx from 'clsx';
 const Episode = ({ episode }) => {
     const classes = useStyles();
     const { epNum, title, description, link, interview } = episode;
-    console.log(episode);
     return (
         <Card variant="">
             <CardContent>
