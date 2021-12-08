@@ -70,6 +70,7 @@ const ResponsiveAppBar = () => {
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
                         color="inherit"
+                        sx={{mr: 4}}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -98,7 +99,7 @@ const ResponsiveAppBar = () => {
                         ))}
                     </Menu>
                 </Box>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
+                <Box sx={{ mr: 4, flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
                 {pages.map((page) => (
                     <Button
                         component={Link}
