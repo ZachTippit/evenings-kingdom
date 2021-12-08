@@ -2,6 +2,14 @@ import { makeStyles } from '@mui/styles';
 import Background from '../img/fantasybg.png'
 
 export default makeStyles((theme) => ({ 
+    App: {
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        padding: 0,
+        overflowX: 'hidden'
+    },
+
     blkBG: {
         background: 'black',
     },
@@ -24,9 +32,6 @@ export default makeStyles((theme) => ({
     home: {
         width: '100%',
         minHeight: '90vh'
-    },
-
-    splashText: {
     },
 
     centerDiv: {
@@ -71,6 +76,15 @@ export default makeStyles((theme) => ({
         height: '4em'
     },
 
+    navBtn: {
+        width: '100%'
+    },
+
+    navDropdown: {
+        display: 'flex',
+        justifyContent: 'flex-end'
+    },
+
     audioPlayer: {
         height: '240',
         width: '70%',
@@ -101,7 +115,6 @@ export default makeStyles((theme) => ({
         display: 'block',
         margin: 'auto',
         width: '100%',
-        padding: '2rem'
     },
 
     episodeTitle: {
@@ -130,6 +143,6 @@ export default makeStyles((theme) => ({
     fanArtLogo: {
         display: 'block',
         margin: 'auto',
-        height: '500px'
+        width: '100%'
     }
 }))

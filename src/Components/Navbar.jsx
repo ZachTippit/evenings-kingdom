@@ -62,50 +62,51 @@ const ResponsiveAppBar = () => {
                 Evening's Kingdom
                 </Typography> */}
 
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={handleOpenNavMenu}
-                    color="inherit"
-                >
-                    <MenuIcon />
-                </IconButton>
-                <Menu
-                    id="menu-appbar"
-                    anchorEl={anchorElNav}
-                    anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                    }}
-                    open={Boolean(anchorElNav)}
-                    onClose={handleCloseNavMenu}
-                    sx={{
-                    display: { xs: 'block', md: 'none' },
-                    }}
-                >
-                    {pages.map((page) => (
-                    <MenuItem component={Link} to={page.link} key={page.title} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page.title}</Typography>
-                    </MenuItem>
-                    ))}
-                </Menu>
+                <Box className={classes.navDropdown} sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }}>
+                    <IconButton
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={handleOpenNavMenu}
+                        color="inherit"
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Menu
+                        id="menu-appbar"
+                        anchorEl={anchorElNav}
+                        anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+                        }}
+                        keepMounted
+                        transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'left',
+                        }}
+                        open={Boolean(anchorElNav)}
+                        onClose={handleCloseNavMenu}
+                        sx={{
+                        display: { xs: 'block', lg: 'none' },
+                        }}
+                    >
+                        {pages.map((page) => (
+                        <MenuItem component={Link} to={page.link} key={page.title} onClick={handleCloseNavMenu}>
+                            <Typography textAlign="center">{page.title}</Typography>
+                        </MenuItem>
+                        ))}
+                    </Menu>
                 </Box>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
                 {pages.map((page) => (
                     <Button
                         component={Link}
                         to={page.link}
                         key={page.title}
                         onClick={handleCloseNavMenu}
-                        sx={{ my: 2, mr: 12, color: 'white', display: 'block'}}
+                        sx={{ my: 2, color: 'white'}}
+                        className={classes.navBtn}
                         >
                         {page.title}
                     </Button>

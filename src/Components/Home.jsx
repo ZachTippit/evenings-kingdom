@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, TextField, Box, Button } from '@mui/material';
+import { Typography, TextField, Box, Button, Link } from '@mui/material';
 import clsx from 'clsx';
 import EKTitle from '../img/ek-blk-alpha.png';
 
@@ -24,7 +24,7 @@ const Home = () => {
                     New to EK? Listen to the first episode below!
                 </Typography>
                 <Typography variant="body1" align="center" className={clsx(classes.btmPad50)}>
-                    Audio recordings can also be found on your favorite podcast service ☺️ (Apple Music and Spotify)
+                    Audio recordings can also be found on your favorite podcast service ☺️ (<Link href='https://podcasts.apple.com/us/podcast/evenings-kingdom/id1576237202'>Apple Music</Link> and <Link href='https://open.spotify.com/show/0hXaV3QB6z003yxnc2Efsk?si=62cf484d69f943aa'>Spotify</Link>)
                 </Typography>
                 <iframe className={clsx(classes.audioPlayer,classes.centerDiv)} title="Episode 1. (Book One)" allowtransparency="true" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=d5nfh-1044f6e-pb&from=embed&share=1&download=1&skin=666666&btn-skin=c73a3a&size=240"></iframe>
             </div>
