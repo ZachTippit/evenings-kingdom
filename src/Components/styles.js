@@ -64,7 +64,7 @@ export default makeStyles((theme) => ({
     },
 
     emailSignUp: {
-        width: '30%',
+        width: '30%'
     },
     
     subBtn: {

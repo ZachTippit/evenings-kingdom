@@ -7,57 +7,45 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ekLogo from '../img/ek-logo.png';
 import { Link } from 'react-router-dom';
 import useStyles from './styles';
-import { textAlign } from '@mui/system';
-    
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
+    
     const pages = [
         {
             title: 'Home',
-            link: '/'
+            link: '/evenings-kingdom/'
         },
         {
             title: 'Listen',
-            link: '/listen'
+            link: '/evenings-kingdom/listen'
         },
         {
             title: 'Extra Content',
-            link: '/extra'
+            link: '/evenings-kingdom/extra'
         },
         {
             title: 'Fan Art',
-            link: '/art'
+            link: '/evenings-kingdom/art'
         },
         {
             title: 'Get Us Published!',
-            link: '/publish'
+            link: '/evenings-kingdom/publish'
         }];
 
     const classes = useStyles();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
     };
-    const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-    };
 
     const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
     };
 
     return (

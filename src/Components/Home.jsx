@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Typography, TextField, Box, Button } from '@mui/material';
 import clsx from 'clsx';
 import EKTitle from '../img/ek-blk-alpha.png';
@@ -37,7 +36,7 @@ const Home = () => {
                     Email subscribers also receive exclusive Evening's Kingdom stories and guided meditations led by the author, Paula Schmidt.
                 </Typography>
                 <div className={clsx(classes.topPad50, classes.centerText, classes.flex)}>
-                    <TextField label="Enter email to subscribe!" className={clsx(classes.emailSignUp)} />
+                    <TextField label="Enter email to subscribe!" InputProps={{className: classes.whiteBG}} className={clsx(classes.emailSignUp)} />
                     <Box sx={{ml: 4}}>
                         <Button className={clsx(classes.subBtn)} color="primary" variant="contained">Subscribe</Button>
                     </Box>

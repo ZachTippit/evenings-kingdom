@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Home, Listen, Extra, Art, Publish, Navbar, Footer} from './components'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -18,11 +17,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/listen' element={<Listen/>} />
-          <Route path='/extra' element={<Extra/>} />
-          <Route path='/art' element={<Art/>} />
-          <Route path='/publish' element={<Publish/>} />
+          <Route path='/evenings-kingdom/' element={<Home/>} />
+          <Route path='/evenings-kingdom/listen' element={<Listen/>} />
+          <Route path='/evenings-kingdom/extra' element={<Extra/>} />
+          <Route path='/evenings-kingdom/art' element={<Art/>} />
+          <Route path='/evenings-kingdom/publish' element={<Publish/>} />
         </Routes>
         <Footer />
       </Router>

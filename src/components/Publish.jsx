@@ -1,6 +1,6 @@
 import React from 'react'
 import EKRust from '../img/ek-rust.png';
-import { Typography, Box, Button, TextField, Grid, Link } from '@mui/material';
+import { Typography, Link } from '@mui/material';
 import clsx from 'clsx';
 
 import useStyles from './styles';
