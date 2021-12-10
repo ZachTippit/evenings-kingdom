@@ -10,7 +10,7 @@ const SignInBox = () => {
     return (
         <Card>
             <div className={clsx(classes.topPad50, classes.btmPad50, classes.centerText, classes.centerDiv)}>
-                <Typography variant="h6">Enter password for lovely goodies :)</Typography>
+                <Typography variant="h6">Enter password for access to lovely extra goodies :)</Typography>
                 <div className={clsx(classes.flex, classes.topPad50)}>
                     <TextField label="Password" className={clsx(classes.emailSignUp)} />
                     <Box sx={{ml: 4}}>

@@ -29,6 +29,10 @@ export default makeStyles((theme) => ({
         opacity: 0.75,
     },
 
+    authorText: {
+        fontSize: '100vw'
+    },
+
     home: {
         width: '100%',
         minHeight: '90vh'
@@ -51,8 +55,17 @@ export default makeStyles((theme) => ({
         paddingTop: '50px'
     },
 
+    topPad24: {
+        paddingTop: '24px'
+    },
+
     btmPad50: {
         paddingBottom: '50px'
+    },
+
+    pad24: {
+        paddingLeft: '24px',
+        paddingRight: '24px'
     },
 
     logo: {
@@ -64,8 +77,20 @@ export default makeStyles((theme) => ({
 
     EKTitle: {
         display: 'block',
-        width: '80%',
+        width: '90%',
         margin: 'auto'
+    },
+
+    EKRust: {
+        display: 'block',
+        width: '100%',
+        margin: 'auto',
+        maxHeight: '600px',
+        maxWidth: '600px'
+    },
+
+    picTextBG: {
+        backgroundColor: 'rgba(20,20,20,0.6)'
     },
 
     emailSignUp: {
@@ -77,7 +102,7 @@ export default makeStyles((theme) => ({
     },
 
     navBtn: {
-        width: '100%'
+        width: '100%',
     },
 
     navDropdown: {
@@ -143,6 +168,6 @@ export default makeStyles((theme) => ({
     fanArtLogo: {
         display: 'block',
         margin: 'auto',
-        width: '100%'
+        width: '50%'
     }
 }))

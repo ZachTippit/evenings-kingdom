@@ -24,7 +24,7 @@ const Publish = () => {
                 <Typography gutterBottom variant='body1' sx={{pb: 2}}>While I write Book 3 of Evening's Kingdom, I’m recording all 600 pages of Books 1 and 2 to share with you here.</Typography>
                 <Typography gutterBottom variant='body1' sx={{pb: 2}}>This will be a four to six book series. With the help of a literary agent, I'd love to publish all the books traditionally, and to collaborate with others to explore all sorts of iterations of Evening's Kingdom. In the meantime, friend, thank you so much for listening.
 ​Please subscribe, review & stay tuned; the rest of the story is just down the road.</Typography>
-                <img src={EKRust} alt="Evening's Kingdom Sticker" className={clsx(classes.topPad50, classes.EKTitle)} />
+                <img src={EKRust} alt="Evening's Kingdom Sticker" className={clsx(classes.topPad50, classes.EKRust)} />
             </div>
         </div>
     )

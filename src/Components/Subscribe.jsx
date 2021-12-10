@@ -13,7 +13,7 @@ import useStyles from './styles';
 let responsiveTheme = createTheme();
 responsiveTheme = responsiveFontSizes(responsiveTheme);
 
-const Home = () => {
+const Subscribe = () => {
     const classes = useStyles();
 
     return (
@@ -53,4 +53,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Subscribe;

@@ -33,9 +33,13 @@ const ResponsiveAppBar = () => {
             link: '/evenings-kingdom/art'
         },
         {
-            title: 'Get Us Published!',
+            title: 'Help Get Us Published!',
             link: '/evenings-kingdom/publish'
-        }];
+        },
+        {
+            title: 'Subscribe',
+            link: '/evenings-kingdom/subscribe'
+        },];
 
     const classes = useStyles();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -107,7 +111,7 @@ const ResponsiveAppBar = () => {
                         key={page.title}
                         onClick={handleCloseNavMenu}
                         sx={{ my: 2, color: 'white'}}
-                        className={classes.navBtn}
+                        fullWidth="true"
                         >
                         {page.title}
                     </Button>
