@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
+import { Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent, Link } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import useStyles from '../styles'
 import clsx from 'clsx';
@@ -26,11 +26,14 @@ const Episode = ({ episode }) => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                             >
-                            <Typography>{interview ? interview : 'Episode Summary'}</Typography>
+                            <Typography><b>{interview ? interview : 'Episode Summary'}</b></Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                             <Typography>
                                 {description}
+                            </Typography>
+                            <Typography className={classes.topPad24}>
+                                <i>Have you subscribed yet?</i> <Link href='./subscribe'>Sign up here!</Link>
                             </Typography>
                             </AccordionDetails>
                         </Accordion>

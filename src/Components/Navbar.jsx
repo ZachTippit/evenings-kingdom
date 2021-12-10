@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ekLogo from '../img/ek-logo.png';
 import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 import useStyles from './styles';
 
 const ResponsiveAppBar = () => {
@@ -33,7 +34,7 @@ const ResponsiveAppBar = () => {
             link: '/evenings-kingdom/art'
         },
         {
-            title: 'Help Get Us Published!',
+            title: 'Get Us Published!',
             link: '/evenings-kingdom/publish'
         },
         {
@@ -53,18 +54,10 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-        <AppBar position="static" className={classes.blkBG}>
-            <Container maxWidth="xl" className={classes.blkBG}>
-            <Toolbar disableGutters className={classes.blkBG}>
+        <AppBar position="static" className={clsx(classes.blkBG, classes.navbar)}>
+            <Container maxWidth="xl" className={clsx(classes.blkBG, classes.navbar)}>
+            <Toolbar disableGutters className={clsx(classes.blkBG, classes.navbar)}>
                 <img src={ekLogo} alt="Logo" className={classes.logo} />
-                {/* <Typography
-                variant="h6"
-                noWrap
-                component="div"
-                sx={{ mr: 5, pr: 6, display: { xs: 'none', md: 'flex' } }}
-                >
-                Evening's Kingdom
-                </Typography> */}
 
                 <Box className={classes.navDropdown} sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' } }}>
                     <IconButton
@@ -103,7 +96,7 @@ const ResponsiveAppBar = () => {
                         ))}
                     </Menu>
                 </Box>
-                <Box sx={{ mr: 4, flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
+                <Box sx={{flexGrow: 1, display: { xs: 'none', lg: 'flex' } }} className={classes.test}>
                 {pages.map((page) => (
                     <Button
                         component={Link}

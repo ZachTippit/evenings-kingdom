@@ -169,5 +169,13 @@ export default makeStyles((theme) => ({
         display: 'block',
         margin: 'auto',
         width: '50%'
+    },
+
+    width100: {
+        width: '100%'
+    },
+
+    test: {
+        justifyContent: 'space-around'
     }
 }))
