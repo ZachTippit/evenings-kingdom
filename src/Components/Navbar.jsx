@@ -34,7 +34,7 @@ const ResponsiveAppBar = () => {
             link: '/evenings-kingdom/art'
         },
         {
-            title: 'Get Us Published!',
+            title: 'Help Get Us Published!',
             link: '/evenings-kingdom/publish'
         },
         {
@@ -102,6 +102,7 @@ const ResponsiveAppBar = () => {
                         component={Link}
                         to={page.link}
                         key={page.title}
+                        align="center"
                         onClick={handleCloseNavMenu}
                         sx={{ my: 2, color: 'white'}}
                         fullWidth="true"
