@@ -59,6 +59,12 @@ const episodes = [
         title: 'Book 1: Episode 9',
         description: "\"Just as wild plants have the strongest medicine, so do the wildest gods.\" - Evening's KingdomOuma, Oriaku and Talu journey into the mountains to trade with the famously reclusive monks of the Cloud Forest. For the first time, we glimpse our mysterious narrator... but when a powerful, mysterious god appears to Ouma, she apprentices herself to his dark ideals to learn how to destroy the Yang.Meanwhile, stationed at the decadent outpost of his mother's native Palmstone, Nor's military insight grows... as do his Yang followers.",
         link: 'https://www.podbean.com/player-v2/?i=8nwqi-10e69e6-pb&from=embed&share=1&download=1&skin=1b1b1b&btn-skin=c73a3a&size=240'
+    },
+    {
+        epNum: '10',
+        title: 'Book 1: Episode 10',
+        description: "The snake god, Lacqsis, grooms Ouma towards the darkness... and gifts her a magical tattoo with a mind of its own. Prince Nor\'s army takes ancient Ullalea, while Talu and Oriaku entertain themselves at the Cloud Abbey... with a fart joke I couldn\'t deliver without laughing, hee :)",
+        link: 'https://www.podbean.com/player-v2/?i=wcb3n-10f9101-pb&from=embed&share=1&download=1&skin=1b1b1b&btn-skin=c73a3a&size=240'
     }
 ]
 

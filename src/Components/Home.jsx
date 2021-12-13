@@ -26,7 +26,7 @@ const Home = () => {
                 </Typography>
                 <img src={EKTitle} alt="Title" className={clsx(classes.topPad24, classes.EKTitle)} />
                 <ThemeProvider theme={responsiveTheme}>
-                    <Typography variant="h4" align="center" color="white" className={clsx(classes.picTextBG, classes.pad24)}>
+                    <Typography variant="h6" align="center" color="white" className={clsx(classes.picTextBG, classes.pad24)}>
                         WRITTEN AND READ BY PAULA SCHMIDT
                     </Typography>
                 </ThemeProvider>

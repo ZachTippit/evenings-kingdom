@@ -17,8 +17,8 @@ const SubscribeForm = () => {
                 <form onSubmit={handleSubmit(onSubmit, onError)}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography fullWidth gutterBottom align='center' variant='h4'>Share your EK story with us!</Typography>
-                            <Typography fullWidth align='justify' variant='body2'>We want to hear about your journey through Evening's Kingdom and provide updates along both Ouma's and my own :)</Typography>
+                            <Typography fullWidth gutterBottom align='center' variant='h4'>Share your EK story with us</Typography>
+                            <Typography fullWidth align='justify' variant='body2'>Tell us about your journey through Evening's Kingdom. And don't forget to check your email for a special treat!</Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <TextField {...register('name')} fullWidth label="Name" />
