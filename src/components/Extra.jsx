@@ -24,16 +24,19 @@ const Extra = () => {
         <div className={clsx(classes.topPad50, classes.btmPad50)}>
                 { !correctPassword ?
                     (
-                        <Grid container spacing={30} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '95vh' }}>
-                                <Grid item lg={1} xs={1} sx={{width: '80%'}}>
-                                    <SignInBox passwordCheck={handlePassword}/>
-                                </Grid>
-                        </Grid>
+                        <>
+                            <Grid container spacing={30} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '95vh' }}>
+                                    <Grid item lg={1} xs={1} sx={{width: '80%'}}>
+                                        <SignInBox passwordCheck={handlePassword}/>
+                                    </Grid>
+                            </Grid>
+                            <EmailOnlySubscribeForm />
+                        </>
+                        
                     ) 
                     :
                     ( <WalledContent /> ) 
                 }
-            <EmailOnlySubscribeForm />
         </div>
     )
 }

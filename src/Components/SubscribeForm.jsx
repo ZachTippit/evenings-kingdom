@@ -16,11 +16,11 @@ const SubscribeForm = () => {
             <div className={clsx(classes.topPad50, classes.btmPad50, classes.centerDiv)}>
                 <form onSubmit={handleSubmit(onSubmit, onError)}>
                     <Grid container spacing={3}>
-                        <Grid item xs={8} lg={12}>
-                            <Typography gutterBottom align='left' variant='h4'>Share your EK story with us!</Typography>
-                            <Typography align='left' variant='body2'>We want to hear about your journey through Evening's Kingdom and provide updates along both Ouma's and my own :)</Typography>
+                        <Grid item xs={12}>
+                            <Typography fullWidth gutterBottom align='center' variant='h4'>Share your EK story with us!</Typography>
+                            <Typography fullWidth align='justify' variant='body2'>We want to hear about your journey through Evening's Kingdom and provide updates along both Ouma's and my own :)</Typography>
                         </Grid>
-                        <Grid item xs={8} lg={12}>
+                        <Grid item xs={12}>
                             <TextField {...register('name')} fullWidth label="Name" />
                         </Grid>
                         <Grid item xs={12}>

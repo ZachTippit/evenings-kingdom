@@ -27,25 +27,16 @@ const WalledContent = () => {
     const classes = useStyles();
 
     return (
-        <div className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
+        <div style={{minHeight: '75vh'}} className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
             <div className={classes.topPad50}>
-                <Typography gutterBottom align="center" variant="h2">Can't get enough of Evening's Kingdom?</Typography>
-                <Typography align="center" variant="h5">Here is some more content for you to enjoy!</Typography>
-            </div>
-            <img src={EK_BW} alt="Evening's Kingdom Logo" className={clsx(classes.fanArtLogo)} />
-            <div className={classes.topPad50}>
-                <Typography gutterBottom variant="h3">Readings</Typography>
-                <Typography variant="body1" align="center">Evening's Kingdom, Chapter One<br/> Translated & Read en español, ​by the supremely talented <Link href='https://arts-sciences.buffalo.edu/romance-languages-literatures/faculty/departmental-faculty/margarita-vargas.html'>Margarita Vargas</Link>,<br />Associate Professor of Romance Languages & Literature, University of Buffalo.</Typography>
-                <Typography variant="body2" align="center" sx={{pt: 3}}>Audio clip coming soon!</Typography>
+                <Typography gutterBottom align="center" variant="h3">Welcome, friends, and thank you for listening.</Typography>
+                <Typography align="center" variant="h5">And since you made it here, thank you for subscribing :)</Typography>
             </div>
             <div className={classes.topPad50}>
-                <Typography gutterBottom variant="h3">Interviews</Typography>
-                <Typography variant="body1">My very first interview with Katherine Forier on her podcast, Time May Change Me. Check out her podcast on Anchor.fm, Spotify and Apple Music!</Typography>
-                <Episode episode={interviews[0]}/>
-                <Episode episode={interviews[1]}/>
-            </div>
-            <Typography gutterBottom variant="h3">Meditations</Typography>
-            <Typography variant="body1">Coming soon...</Typography>
+                <Typography variant="h5" align="center"><b>The Neverseas</b><br/>Written & Read by Paula Schmidt</Typography>
+                <Typography variant="body2" align="center" sx={{pt: 3}}><b>Audio clip coming soon!</b></Typography>
+                <Typography variant="body1" align="center" sx={{pt: 3}}>The eerie, obsessive attraction between a restless young woman and a dangerous traveler tips into madness... and revenge.<br/><br/>Gothic atmosphere, check. NSFW - check check :)<br/><br/>One request, dear listeners - <i><b>please do not share this content with anyone.</b></i> In order for it to qualify for a certain, top secret, upcoming endeavor, the story can't be widely available, or it's disqualified. So for at least the next few months, it needs to be just for you guys. That said, if you know some people who you think might enjoy it, <Link href='./subscribe'><b>please strongly encourage them to subscribe and they'll also receive the private link.</b></Link><br/><br/>Happy Hallow's eve listens, my dears. I do believe Poe would approve of your activity. Please enjoy :)</Typography>
+            </div>            
         </div>
     )
 }

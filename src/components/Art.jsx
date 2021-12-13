@@ -29,23 +29,29 @@ const Art = () => {
     return (
         <div className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
             <div className={classes.topPad50}>
-                <Typography gutterBottom align="center" variant="h2">Can't get enough of Evening's Kingdom?</Typography>
+                <Typography gutterBottom align="center" variant="h3">Can't get enough of Evening's Kingdom?</Typography>
                 <Typography align="center" variant="h5">Here is some more content for you to enjoy!</Typography>
             </div>
-            <img src={EK_BW} alt="Evening's Kingdom Logo" className={clsx(classes.fanArtLogo)} />
             <div className={classes.topPad50}>
-                <Typography gutterBottom variant="h3">Readings</Typography>
-                <Typography variant="body1" align="center">Evening's Kingdom, Chapter One<br/> Translated & Read en español, ​by the supremely talented <Link href='https://arts-sciences.buffalo.edu/romance-languages-literatures/faculty/departmental-faculty/margarita-vargas.html'>Margarita Vargas</Link>,<br />Associate Professor of Romance Languages & Literature, University of Buffalo.</Typography>
+                <Typography gutterBottom align="center" variant="h4">Readings</Typography>
+                <Typography variant="body1" align="center"><b>Evening's Kingdom, Chapter One</b><br/> Translated & Read en español, ​by the supremely talented <Link href='https://arts-sciences.buffalo.edu/romance-languages-literatures/faculty/departmental-faculty/margarita-vargas.html'><b>Margarita Vargas</b></Link>,<br />Associate Professor of Romance Languages & Literature, University of Buffalo.</Typography>
                 <Typography variant="body2" align="center" sx={{pt: 3}}>Audio clip coming soon!</Typography>
             </div>
             <div className={classes.topPad50}>
-                <Typography gutterBottom variant="h3">Interviews</Typography>
-                <Typography variant="body1">My very first interview with Katherine Forier on her podcast, Time May Change Me. Check out her podcast on Anchor.fm, Spotify and Apple Music!</Typography>
+                <div className={classes.btmPad50}>
+                    <Typography gutterBottom align="center" variant="h4">Interviews</Typography>
+                    <Typography gutterBottom align='center' variant="body1">My (first-ever!) interview, with the lovely Katherine Forier of <Link href='https://anchor.fm/katherine-forier/episodes/Paula-Schmidt---Part-One----On-Professional-Writing--School-Buses--Finding-your-way-e19vam0'><b>Time May Change Me</b></Link>. Please share and enjoy!</Typography>
+                    <Typography gutterBottom align='center' variant='body2'>You can also listen via <Link href='https://open.spotify.com/show/03d5nAKHWVTyatbpngcmTm'><b>Spotify</b></Link> & <Link href='https://podcasts.apple.com/us/podcast/time-may-change-me/id1560791534'><b>Apple Music</b></Link></Typography>
+                </div>
                 <Episode episode={interviews[0]}/>
                 <Episode episode={interviews[1]}/>
             </div>
-            <Typography gutterBottom variant="h3">Meditations</Typography>
-            <Typography variant="body1">Coming soon...</Typography>
+            <div className={classes.topPad50}>
+                <Typography gutterBottom align="center" variant="h4">Meditations</Typography>
+                <Typography align='center' variant="body1">Coming soon...</Typography>
+            </div>
+            
+            <img src={EK_BW} alt="Evening's Kingdom Logo" className={clsx(classes.fanArtLogo, classes.topPad50)} />
         </div>
     )
 }

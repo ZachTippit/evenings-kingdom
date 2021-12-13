@@ -67,7 +67,6 @@ const ResponsiveAppBar = () => {
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
                         color="inherit"
-                        sx={{mr: 4}}
                     >
                         <MenuIcon />
                     </IconButton>

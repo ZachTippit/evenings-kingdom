@@ -82,7 +82,7 @@ const Listen = () => {
             </div>
             <div className={clsx(classes.liteGrayBG, classes.btmPad50, classes.listenFooter)}>
                 <EmailOnlySubscribeForm />
-                <Typography gutterBottom variant="h4" align="center" className={clsx(classes.topPad50, classes.centerText, classes.pad24)}>
+                <Typography gutterBottom variant="h4" align="center" className={clsx(classes.centerText, classes.pad24)}>
                     Also available via <Link href='https://open.spotify.com/show/0hXaV3QB6z003yxnc2Efsk'>Spotify</Link> and <Link href='https://podcasts.apple.com/us/podcast/evenings-kingdom/id1576237202'>Apple Music</Link>
                 </Typography>
                 <Typography variant="h6" align="center" className={clsx(classes.centerText, classes.pad24)}>
