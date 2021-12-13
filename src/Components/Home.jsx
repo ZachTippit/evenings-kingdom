@@ -1,20 +1,22 @@
 import React from 'react';
-import { Typography, TextField, Box, Button, Link } from '@mui/material';
-import clsx from 'clsx';
 import EKTitle from '../img/ek-blk-alpha.png';
-import {
-    createTheme,
-    responsiveFontSizes,
-    ThemeProvider,
-  } from '@mui/material/styles';
+import EmailOnlySubscribeForm from './EmailOnlySubscribeForm';
+import { Typography } from '@mui/material';
+import clsx from 'clsx';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import { useForm } from 'react-hook-form';
 
 import useStyles from './styles';
+
 
 let responsiveTheme = createTheme();
 responsiveTheme = responsiveFontSizes(responsiveTheme);
 
 const Home = () => {
     const classes = useStyles();
+    const { register, handleSubmit } = useForm();
+    const onSubmit = (data, e) => console.log(data, e);
+    const onError = (errors, e) => console.log(errors, e);
 
     return (
         <div className={clsx(classes.home, classes.whiteBG)}>
@@ -38,17 +40,7 @@ const Home = () => {
                 </Typography>
                 <iframe className={clsx(classes.audioPlayer,classes.centerDiv, classes.topPad24)} title="Episode 1. (Book One)" allowtransparency="true" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=d5nfh-1044f6e-pb&from=embed&share=1&download=1&skin=666666&btn-skin=c73a3a&size=240"></iframe>
             </div>
-            <div className={clsx(classes.liteGrayBG, classes.btmPad50)}>
-                <Typography variant="h4" align="center" className={clsx(classes.topPad50, classes.centerText, classes.pad24)}>
-                    Love the show? Don't miss an episode. Subscribe for updates & more!
-                </Typography>
-                <div className={clsx(classes.topPad50, classes.centerText, classes.flex)}>
-                    <TextField label="Enter email to subscribe!" InputProps={{className: classes.whiteBG}} className={clsx(classes.emailSignUp)} />
-                    <Box sx={{ml: 4}}>
-                        <Button className={clsx(classes.subBtn)} color="primary" variant="contained">Subscribe</Button>
-                    </Box>
-                </div>
-            </div>
+            <EmailOnlySubscribeForm />
         </div>
     )
 }

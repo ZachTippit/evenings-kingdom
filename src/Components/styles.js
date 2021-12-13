@@ -1,6 +1,10 @@
 import { makeStyles } from '@mui/styles';
 import Background from '../img/fantasybg.png'
 
+// So... this totally needs to be broken up and cleaned up. Oops. At least it is all here! ctrl+f is your friend.
+// Generally: top: general properties, mid: home, listen, extra pages in order.
+
+
 export default makeStyles((theme) => ({ 
     App: {
         width: '100%',
@@ -89,6 +93,13 @@ export default makeStyles((theme) => ({
         maxWidth: '600px'
     },
 
+    fanArtLogo: {
+        display: 'block',
+        width: '100%',
+        margin: 'auto',
+        maxWidth: '400px'
+    },
+
     picTextBG: {
         backgroundColor: 'rgba(20,20,20,0.6)'
     },
@@ -165,17 +176,11 @@ export default makeStyles((theme) => ({
         marginTop: '20px'
     },
 
-    fanArtLogo: {
-        display: 'block',
-        margin: 'auto',
-        width: '50%'
-    },
-
     width100: {
         width: '100%'
     },
 
-    test: {
-        justifyContent: 'space-around'
+    extraPage: {
+        minHeight: '65vh'
     }
 }))
