@@ -17,4 +17,8 @@ const addSubscriber = async ({firstName, lastName, email, comment}) => {
     console.log(response);
 }
 
+const isMember = async () => {
+    const response = await fetch('')
+}
+
 module.exports = { addSubscriber }
