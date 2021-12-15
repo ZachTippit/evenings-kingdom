@@ -1,5 +1,5 @@
 
-const addSubscriber = async ({firstName, lastName, email, comment}) => {
+export const addSubscriber = async ({firstName, lastName, email, comment}) => {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -20,5 +20,3 @@ const addSubscriber = async ({firstName, lastName, email, comment}) => {
 const isMember = async () => {
     const response = await fetch('')
 }
-
-module.exports = { addSubscriber }

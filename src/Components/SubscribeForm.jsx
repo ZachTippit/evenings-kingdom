@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography, TextField, Grid, Button, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
-import addSubscriber from '../lib/email.js';
+import { addSubscriber } from '../lib/email.js';
 
 import useStyles from './styles';
 
