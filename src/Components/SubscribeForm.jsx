@@ -2,13 +2,15 @@ import React from 'react'
 import { Typography, TextField, Grid, Button, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
+import { addSubscriber } from '../lib/email.js';
 
 import useStyles from './styles';
 
 const SubscribeForm = () => {
     const classes = useStyles();
+
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data, e) => console.log(data, e);
+    const onSubmit = (data, e) => addSubscriber(data);
     const onError = (errors, e) => console.log(errors, e);
 
     return (
@@ -20,20 +22,23 @@ const SubscribeForm = () => {
                             <Typography fullWidth gutterBottom align='center' variant='h4'>Share your EK story with us</Typography>
                             <Typography fullWidth align='justify' variant='body2'>Tell us about your journey through Evening's Kingdom. And don't forget to check your email for a special treat!</Typography>
                         </Grid>
-                        <Grid item xs={12}>
-                            <TextField {...register('name')} fullWidth label="Name" />
+                        <Grid item xs={6}>
+                            <TextField required {...register('firstName')} fullWidth label="First Name" />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <TextField {...register('lastName')} fullWidth label="Last Name" />
                         </Grid>
                         <Grid item xs={12}>
-                            <TextField {...register('email')} fullWidth label="Email" />
+                            <TextField required {...register('email')} fullWidth label="Email" />
                         </Grid>
                         <Grid item xs={12}>
-                            <TextField {...register('comments')} fullWidth label="Comments (optional, but heartily encouraged!)" />
+                            <TextField {...register('comment')} fullWidth label="Comments (optional, but heartily encouraged!)" />
                         </Grid>
-                        <Grid item xs={12}>
+                        {/* <Grid item xs={12}>
                             <FormGroup>
                                 <FormControlLabel control={<Checkbox {...register('subscribe')} defaultChecked />} label="Subscribe for future EK updates, extra goodies and lovely vibes straight to your inbox <3" />
                             </FormGroup>
-                        </Grid>
+                        </Grid> */}
                         <Grid item xs={12}>
                             <Button fullWidth type="submit" variant="contained">Submit</Button>
                         </Grid>
