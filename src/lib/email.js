@@ -13,8 +13,9 @@ export const addSubscriber = async ({firstName, lastName, email, comment}) => {
             }
         })
     };
-    const response = await fetch('https://api.convertkit.com/v3/forms/2847002/subscribe', requestOptions);
-    console.log(response);
+    const Response = await fetch('https://api.convertkit.com/v3/forms/2847002/subscribe', requestOptions);
+    
+    return Response.ok;
 }
 
 const isMember = async () => {

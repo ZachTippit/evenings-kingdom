@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Typography, Grid, TextField, Button } from '@mui/material';
 import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
@@ -9,9 +9,13 @@ import useStyles from './styles'
 const EmailOnlySubscribeForm = () => {
     const classes = useStyles();
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data, e) => addSubscriber(data);
     const onError = (errors, e) => console.log(errors, e);
 
+    const [ isRegistered, setIsRegistered ] = useState(false);
+
+    const onSubmit = async (data, e) => {
+        setIsRegistered(await addSubscriber(data));
+    }
 
     return (
     <div className={clsx(classes.liteGrayBG, classes.btmPad50)}>
@@ -24,6 +28,7 @@ const EmailOnlySubscribeForm = () => {
                     direction="column"
                     justifyContent="center"
                     alignItems="stretch" spacing={4} p={2}>
+                    {isRegistered ? <Typography variant='body1' align='center'><b>Thank you for subscribing! Check your email for details.</b></Typography> : null}
                     <Grid item xs={12} lg={8}>
                         <TextField fullWidth label="Enter email to subscribe!" {...register('email')} InputProps={{className: classes.whiteBG}} className={clsx(classes.emailSignUp)} />
                     </Grid>
