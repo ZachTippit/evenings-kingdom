@@ -16,7 +16,7 @@ const WalledContent = () => {
     const classes = useStyles();
 
     return (
-        <div style={{minHeight: '75vh'}} className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
+        <div style={{minHeight: '75vh', backgroundColor: 'black', color: 'white'}} className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
             <div className={classes.topPad50}>
                 <Typography gutterBottom align="center" variant="h3">Welcome, friends, and thank you for listening.</Typography>
                 <Typography align="center" variant="h5">And since you made it here, thank you for subscribing :)</Typography>

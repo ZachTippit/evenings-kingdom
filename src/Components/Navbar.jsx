@@ -19,27 +19,27 @@ const ResponsiveAppBar = () => {
     const pages = [
         {
             title: 'Home',
-            link: '/evenings-kingdom/'
+            link: '/'
         },
         {
             title: 'Listen',
-            link: '/evenings-kingdom/listen'
+            link: 'listen'
         },
         {
             title: 'Extra Content',
-            link: '/evenings-kingdom/extra'
+            link: 'extra'
         },
         {
             title: 'Fan Art',
-            link: '/evenings-kingdom/art'
+            link: 'art'
         },
         {
             title: 'Help Get Us Published!',
-            link: '/evenings-kingdom/publish'
+            link: 'publish'
         },
         {
             title: 'Subscribe',
-            link: '/evenings-kingdom/subscribe'
+            link: 'subscribe'
         },];
 
     const classes = useStyles();

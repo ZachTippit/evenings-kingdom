@@ -11,7 +11,7 @@ export default function Footer() {
           <Container maxWidth="md">
             <Toolbar>
               <Typography variant="body1" color="inherit">
-                © 2021 Zach Tippit
+                © 2022 Zach Tippit
               </Typography>
             </Toolbar>
           </Container>
