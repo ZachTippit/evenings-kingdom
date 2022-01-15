@@ -30,7 +30,7 @@ const ResponsiveAppBar = () => {
             link: 'extra'
         },
         {
-            title: 'Fan Art',
+            title: 'Fan Art & Interviews',
             link: 'art'
         },
         {

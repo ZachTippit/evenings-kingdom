@@ -1,14 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Typography, Grid, TextField, Button } from '@mui/material';
 import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
-import { addSubscriber } from '../lib/email.js';
+import { addSubscriber, subscriberCount } from '../lib/email.js';
 
 import useStyles from './styles'
 
 const EmailOnlySubscribeForm = () => {
     const classes = useStyles();
     const { register, handleSubmit } = useForm();
+    const [subCount, setSubCount] = useState('a lot of');
     const onError = (errors, e) => console.log(errors, e);
 
     const [ isRegistered, setIsRegistered ] = useState(false);
@@ -17,10 +18,15 @@ const EmailOnlySubscribeForm = () => {
         setIsRegistered(await addSubscriber(data));
     }
 
+    useEffect( async() => {
+        let SUB_COUNT = await subscriberCount();
+        setSubCount(SUB_COUNT);
+    }, [])
+
     return (
     <div className={clsx(classes.liteGrayBG, classes.btmPad50)}>
         <Typography variant="h4" align="center" className={clsx(classes.topPad50, classes.centerText, classes.pad24)}>
-            Love the show? Don't miss an episode.
+            Love the show? Join {subCount} others who never miss an episode.
         </Typography>
         <div className={clsx(classes.topPad50, classes.flex)}>
             <form className={classes.width70} onSubmit={handleSubmit(onSubmit, onError)}>

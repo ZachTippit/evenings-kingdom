@@ -18,6 +18,10 @@ export const addSubscriber = async ({firstName, lastName, email, comment}) => {
     return Response.ok;
 }
 
-const isMember = async () => {
-    const response = await fetch('')
+export const subscriberCount = async() => {
+
+    const Response = await fetch(`https://api.convertkit.com/v3/subscribers?api_secret=${process.env.REACT_APP_CK_SECRET}`)
+        .then(response => response.json())
+        .then(data => {return data.total_subscribers})
+    return Response;
 }
