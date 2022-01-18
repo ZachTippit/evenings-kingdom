@@ -1,5 +1,6 @@
 import './App.css';
-import { Home, Listen, Extra, Art, Publish, Subscribe, Layout, Navbar, Footer} from './Components'
+import React from 'react';
+import { Home, Listen, Extra, Art, Publish, Subscribe, TribecaPass, Layout, Navbar, Footer} from './Components'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -19,10 +20,11 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home/>} />
             <Route path='listen' element={<Listen/>} />
-            <Route path='extra' element={<Extra/>} />
+            <Route path='extra' element={<Extra page={'extra'} />} />
             <Route path='art' element={<Art/>} />
             <Route path='publish' element={<Publish/>} />
             <Route path='subscribe' element={<Subscribe/>} />
+            <Route path='tribeca' element={<TribecaPass />} />
           </Route>
         </Routes>
       </Router>

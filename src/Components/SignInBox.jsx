@@ -8,6 +8,7 @@ import useStyles from './styles';
 const SignInBox = ({passwordCheck}) => {
     const classes = useStyles();
     const { register, handleSubmit } = useForm();
+    
     const onSubmit = (data, e) => {
         const password = data;
         passwordCheck(password);

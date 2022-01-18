@@ -26,7 +26,7 @@ const EmailOnlySubscribeForm = () => {
     return (
     <div className={clsx(classes.liteGrayBG, classes.btmPad50)}>
         <Typography variant="h4" align="center" className={clsx(classes.topPad50, classes.centerText, classes.pad24)}>
-            Love the show? Join {subCount} others who never miss an episode.
+            Love the show? Subscribe and never miss an episode.
         </Typography>
         <div className={clsx(classes.topPad50, classes.flex)}>
             <form className={classes.width70} onSubmit={handleSubmit(onSubmit, onError)}>

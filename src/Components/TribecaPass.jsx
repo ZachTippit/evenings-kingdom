@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { Grid } from '@mui/material';
-import clsx from 'clsx';
 import SignInBox from './SignInBox'
 import EmailOnlySubscribeForm from './EmailOnlySubscribeForm';
-import WalledContent from './WalledContent'
+import Tribeca from './Tribeca'
 
 import useStyles from './styles';
 
 
-const Extra = ({page}) => {
+const TribecaPass = () => {
     const classes = useStyles();
     const [correctPassword, setCorrectPassword] = useState('');
 
@@ -25,7 +24,7 @@ const Extra = ({page}) => {
                 { !correctPassword ?
                     (
                         <>
-                            <Grid container spacing={30} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '95vh' }}>
+                            <Grid container spacing={30} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '80vh' }}>
                                     <Grid item lg={1} xs={1} sx={{width: '80%'}}>
                                         <SignInBox passwordCheck={handlePassword}/>
                                     </Grid>
@@ -34,10 +33,10 @@ const Extra = ({page}) => {
                         </>
                     ) 
                     :
-                    ( <WalledContent /> ) 
+                    ( <Tribeca /> ) 
                 }
         </div>
     )
 }
 
-export default Extra
+export default TribecaPass
