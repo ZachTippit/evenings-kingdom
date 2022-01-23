@@ -13,7 +13,7 @@ export const addSubscriber = async ({firstName, lastName, email, comment}) => {
             }
         })
     };
-    const Response = await fetch('https://api.convertkit.com/v3/forms/2847002/subscribe', requestOptions);
+    const Response = await fetch('https://api.convertkit.com/v3/forms/2916331/subscribe', requestOptions);
     
     return Response.ok;
 }
