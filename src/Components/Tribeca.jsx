@@ -16,18 +16,18 @@ const Tribeca = () => {
     const classes = useStyles();
 
     return (
-        <Grid container spacing={2} direction='column' sx={{minHeight: '90vh', backgroundColor: 'black', color: 'white'}}>
-            <Grid item xs={12} md={6} sx={{mt: 8, p: 2}}>
+        <Grid container spacing={2} sx={{minHeight: '90vh', backgroundColor: 'black', color: 'white', justifyContent: 'center'}}>
+            <Grid item xs={12} md={8} sx={{mt: 8, p: 2}}>
                 <Typography gutterBottom align="center" variant="h3">Welcome, Tribeca Screeners,</Typography>
                 <Typography variant='h6' align='center'>and thank you for listening.</Typography>
             </Grid>
-            <Grid item xs={12} xs={12} md={6} sx={{mr: 4, ml: 4}}>
+            <Grid item xs={12} md={8} sx={{mr: 4, ml: 4}}>
                 <AudioPlayer title={Neverseas.title} description={Neverseas.description} source={NeverseasAudio} />
                 <Typography variant="body1" align="center" sx={{pt: 3}}>The eerie, obsessive attraction between a restless young woman and a dangerous traveler tips into madness... and revenge.</Typography>
                 <Typography variant="body1" align="center" sx={{pt: 3}}>“The night I met Death, he thought he was just passing through…”</Typography>
                 <Divider variant='middle' color='white' style={{width: '60%', margin: 'auto', marginTop: '2rem'}}/>
             </Grid>
-            <Grid item xs={12} xs={12} md={6} sx={{m: 4}}>
+            <Grid item xs={12} md={8} sx={{m: 4}}>
                 <Typography gutterBottom variant='body1' align='left' sx={{pl: 2}}>I wrote The NeverSeas during a spell of deliciously stormy mornings, nostalgic for a lovely, lonely old hotel I once knew as a girl.</Typography>
                 <Typography gutterBottom variant='body1' align='left' sx={{pl: 2, pt: 3}}>Growing up in Lawrence, Kansas, I often dreamt about holing up at <Link href='https://www.thesavoykc.com/about/' sx={{color: 'white', textDecoration: 'underline'}}>the glamorous old Savoy Hotel</Link> in downtown Kansas City to write a novel someday. Dark walls and ice tinkling in drinks; worn red carpets. Harry Truman often ate his boiled eggs there, in his favorite creaky-green leather booth. </Typography>
                 <Typography gutterBottom variant='body1' align='left' sx={{pl: 2, pt: 3}}>On special occasions when we were growing up, dad took us for lobster bisque and shrimp cocktails. I loved it intensely. </Typography>
@@ -36,14 +36,6 @@ const Tribeca = () => {
                 <Typography gutterBottom variant='body1' align='left' sx={{pl: 2, pt: 3}}>Thank you so much for listening. Please enjoy!</Typography>
             </Grid>
         </Grid>
-        // <div style={{minHeight: '75vh', backgroundColor: 'black', color: 'white'}} className={clsx(classes.centerDiv, classes.topPad50, classes.btmPad50, classes.width70)}>
-        //     <div className={classes.topPad50}>
-                
-        //     </div>
-        //     <div>
-                
-        //     </div>            
-        // </div>
     )
 }
 
