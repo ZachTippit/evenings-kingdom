@@ -26,7 +26,7 @@ const TribecaPass = () => {
                         <>
                             <Grid container spacing={30} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '80vh' }}>
                                     <Grid item lg={1} xs={1} sx={{width: '80%'}}>
-                                        <SignInBox passwordCheck={handlePassword}/>
+                                        <SignInBox passwordCheck={handlePassword} landingText={'Welcome, Tribeca Screeners!'} passwordText={'Please enter password here'}/>
                                     </Grid>
                             </Grid>
                             <EmailOnlySubscribeForm />
